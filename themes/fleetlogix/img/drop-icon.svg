@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32.55" height="51.28" viewBox="0 0 32.55 51.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #f05d24;
+      }
+    </style>
+  </defs>
+  <title>drop-icon</title>
+  <g>
+    <circle class="cls-1" cx="16.27" cy="16.27" r="16.27"/>
+    <path class="cls-2" d="M1,1.51C2.3,3.33,3.73,5,5.13,6.75a21.49,21.49,0,0,0,3.55,3.52,11.29,11.29,0,0,0,1.2.73h.53A12.5,12.5,0,0,0,14.1,7.94,61.16,61.16,0,0,0,20.33,0H0C.34.5.67,1,1,1.51Z" transform="translate(6.1 40.28)"/>
+  </g>
+</svg>
