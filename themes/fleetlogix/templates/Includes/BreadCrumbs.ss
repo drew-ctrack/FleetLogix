@@ -1,5 +1,11 @@
-<% if $Level(2) %>
-	<div id="Breadcrumbs">
-	   	$Breadcrumbs
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+	<div class="row">
+		<div class="large-12 columns">
+			<p>
+				$BreadCrumbs
+			</p>
+		</div>
 	</div>
-<% end_if %>
+</div>
+<!-- END Breadcrumbs -->

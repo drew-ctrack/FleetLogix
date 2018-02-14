@@ -1,44 +1,83 @@
-<!DOCTYPE html>
-<!--
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Simple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)
-Change it, enhance it and most importantly enjoy it!
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
--->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  	<% base_tag %>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetLogix</title>
+    <link rel="stylesheet" href="$ThemeDir/css/app.css">
+  </head>
+  <body>
 
-<!--[if !IE]><!-->
-<html lang="$ContentLocale">
-<!--<![endif]-->
-<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
-<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
-<!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
-<head>
-	<% base_tag %>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	$MetaTags(false)
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<% require themedCSS('reset') %>
-	<% require themedCSS('typography') %>
-	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
-	<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
-</head>
-<body class="$ClassName.ShortName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-<% include Header %>
-<div class="main" role="main">
-	<div class="inner typography line">
-		$Layout
-	</div>
-</div>
-<% include Footer %>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    
+    <!-- mobile menu -->
+    <div class="menu-wrap">
+      <nav class="menu">
+        <ul class="nav-menu">
+       		<% loop Menu(1) %>
+       			<li class="nav-item"><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
+       		<% end_loop %>
+        </ul>
+        <button class="close-button" id="close-button">X</button>
+      </nav>
+    </div>
+    <button class="menu-button fa fa-bars" id="open-button"><span></button>
+    
+      <header >
+        <div class="row">
+          <div class="large-3 medium-3 small-12 columns">
+            <a href="index.html" id="logo"><img src="$ThemeDir/img/fleetlogix-logo-light.svg" alt="" class="light-logo"></a>
+          </div>
+          <div class="large-9 columns medium-9">
+            <a id="hamburger" href="#more-menu"><span></span></a>
+            <nav id="nav" role="navigation">
+              <ul class="nav-menu">
+              	
+              	<% loop Menu(1) %>
+              		<li class="nav-item <% if $Children %>has-drop<% end_if %>"><a href="$Link">$MenuTitle</a>
+              		<% if $Children %>
+              			<div class="sub-nav">
+              				<ul class="sub-nav-group nav-item-list">
+              					<% loop Children %>
+              						<li><a href="$Link">$MenuTitle</a></li>
+              					<% end_loop %>
+              				</ul>
+              			</div>
+              		<% end_if %>
+              		</li>
+              	<% end_loop %>
+              	
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    
+      
+      $Layout
 
-<% require javascript('//code.jquery.com/jquery-1.7.2.min.js') %>
-<% require themedJavascript('script') %>
+    
+      <section class="cta animate-box">
+        <div class="background-image" style="background-image: url($ThemeDir/img/cta-bg.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="row">
+          <div class="large-12 columns">
+            <h2>Lorem ipsum call to action</h2>
+            <p>Morbi molestie euismod nulla, et vehicula metus.</p>
+            <a href="/" class="button">Let's Talk</a>
+          </div>
+        </div>
+      </section>
+    
+      
+      <% include Footer %>
+    
 
-</body>
+    <script src="$ThemeDir/js/app.js"></script>
+
+  </body>
 </html>
