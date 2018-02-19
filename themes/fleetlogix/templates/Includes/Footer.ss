@@ -4,29 +4,7 @@
 			<a href="index.html" id="logo"><img src="$ThemeDir/img/fleetlogix-logo-light.svg" alt="" class="light-logo"></a>
 		</div>
 		
-		<% loop Menu(2) %>
-			<% if ClassName = ProductHolder %>
-				whimsical
-			<% end_if %>
-		<% end_loop %>
 		
-		
-		<% control Menu(2) %>
-					
-					<% if ClassName = ProductHolder %>
-					
-						<div class="large-3 medium-3 small-12 columns">
-							<h5><a href="$Link">$MenuTitle</a></h5>
-							<ul>
-								<% loop $Children %>
-									<li><a href="$Link">$MenuTitle</a></li>
-								<% end_loop %>
-							</ul>
-						</div>
-						
-					<% end_if %>				
-		
-		<% end_control %>
 		
 		<div class="large-3 medium-3 small-12 columns">
 			<h5><a href="/">Contact FleetLogix</a></h5>
