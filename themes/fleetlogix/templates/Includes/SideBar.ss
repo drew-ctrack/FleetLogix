@@ -1,14 +1,20 @@
-<aside class="sidebar unit size1of4">
-	<% if $Menu(2) %>
-		<nav class="secondary">
-			<% with $Level(1) %>
-				<h3>
-					$MenuTitle
-				</h3>
-				<ul>
-					<% include SidebarMenu %>
-				</ul>
-			<% end_with %>
-		</nav>
+<div class="sidebar hide-for-print">
+<div class="sidebar-menu">
+	<% if Menu(2) %>
+		<ul>
+			<% loop Menu(2) %>
+				<li <% if LinkOrCurrent = current %>class="active"<% end_if %>>
+					<a href="$Link">$Title</a>
+				</li>
+			<% end_loop %>
+		</ul>
+	<% else %>
+		<ul>
+			<% loop Menu(1) %>
+				<li <% if LinkOrCurrent = current %>class="active"<% end_if %>>
+					<a href="$Link">$Title</a>
+				</li>
+			<% end_loop %>
+		</ul>
 	<% end_if %>
-</aside>
+</div>

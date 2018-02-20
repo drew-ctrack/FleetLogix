@@ -5,8 +5,8 @@
         <div class="row">
           <div class="large-12 columns animate-box fadeIn">
             <div class="hero-content">
-              <p>Lorem ipsum dolor sit amet, consectetur elit </p>
-              <h1>Lorem ipsum dolor sit amet, consectetur elit?</h1>
+              <p>$HeadingSubtext</p>
+              <h1>$HeadingText</h1>
               <a href="#main-content" class="button drop">Learn More</a>
             </div>
           </div>
@@ -22,9 +22,7 @@
             <div class="half-content">
               <div class="background-image half left" style="background-image: url(assets/img/bus-bg.jpg);"><span class="gradient-overlay"></span></div>
               <div class="half content right">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-                <p>Donec tincidunt lorem eu euismod egestas. Mauris eleifend nibh id ante suscipit euismod. Maecenas interdum pellentesque dolor, eget pellentesque nisl congue id. Nunc nec justo elementum,.</p>
-                <p>Curabitur vestibulum, ipsum nec interdum facilisis, quam ante laoreet sem, id consequat metus risus eleifend felis. Morbi molestie dolor a consequat pretium. Pellentesque a dolor vel lacus posuere?</p>
+                	$Content
                 <a href="/" class="button">Learn More</a>
               </div>
             </div>
@@ -130,6 +128,9 @@
               <div class="background-image half right" style="background-image: url(assets/img/why-bg.jpg);"><span class="gradient-overlay"></span></div>
               <div class="half content left">
                 <h2>Why FleetLogix?</h2>
+                
+                
+                
                 <div class="why-container">
                   <div class="why-icon">
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="41.95" height="56" viewBox="0 0 41.95 56">
@@ -154,53 +155,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis luctus felis id ultrices. Vivamus sed varius leo, non bibendum magna.</p>
                   </div>
                 </div>
-                <div class="why-container">
-                  <div class="why-icon">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="41.95" height="56" viewBox="0 0 41.95 56">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #f05d24;
-                          }
-    
-                          .cls-2 {
-                            fill: #2e3442;
-                          }
-                        </style>
-                      </defs>
-                      <title>icon-pin</title>
-                      <path class="cls-1" d="M41.72,17.8A21.29,21.29,0,0,0,38.17,9a20,20,0,0,0-5.07-5.1A20.33,20.33,0,0,0,24,.26C23.49.19,23,.09,22.41,0H19.55c-.87.14-1.74.26-2.6.42a20.11,20.11,0,0,0-5.1,1.69A20.85,20.85,0,0,0,1.25,13.88,19.74,19.74,0,0,0,0,21.9a22.64,22.64,0,0,0,1.59,6.62A61.45,61.45,0,0,0,7,39.33c1.52,2.44,3.09,4.85,4.75,7.18C13,48.33,14.48,50,15.9,51.75a21.74,21.74,0,0,0,3.59,3.52,11.57,11.57,0,0,0,1.22.73h.54A12.83,12.83,0,0,0,25,52.94a63.35,63.35,0,0,0,6.87-8.77c1.59-2.42,3.14-4.88,4.58-7.39A51.92,51.92,0,0,0,41,26.45,18.77,18.77,0,0,0,41.72,17.8ZM21,37.26A16.27,16.27,0,1,1,37.25,21,16.26,16.26,0,0,1,21,37.26Z"/>
-                      <path class="cls-2" d="M33.62,15.57a1.51,1.51,0,0,1-.45,1.11L21.35,28.49l-2.21,2.22a1.51,1.51,0,0,1-1.11.46,1.48,1.48,0,0,1-1.11-.46L14.7,28.49l-5.91-5.9a1.55,1.55,0,0,1-.46-1.11,1.52,1.52,0,0,1,.46-1.11L11,18.15a1.52,1.52,0,0,1,1.11-.46,1.55,1.55,0,0,1,1.11.46L18,23l10.7-10.72a1.51,1.51,0,0,1,1.11-.45,1.54,1.54,0,0,1,1.11.45l2.22,2.22A1.54,1.54,0,0,1,33.62,15.57Z"/>
-                    </svg>
-                  </div>
-                  <div class="why-content">
-                    <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis luctus felis id ultrices. Vivamus sed varius leo, non bibendum magna.</p>
-                  </div>
-                </div>
-                <div class="why-container">
-                  <div class="why-icon">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="41.95" height="56" viewBox="0 0 41.95 56">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #f05d24;
-                          }
-    
-                          .cls-2 {
-                            fill: #2e3442;
-                          }
-                        </style>
-                      </defs>
-                      <title>icon-pin</title>
-                      <path class="cls-1" d="M41.72,17.8A21.29,21.29,0,0,0,38.17,9a20,20,0,0,0-5.07-5.1A20.33,20.33,0,0,0,24,.26C23.49.19,23,.09,22.41,0H19.55c-.87.14-1.74.26-2.6.42a20.11,20.11,0,0,0-5.1,1.69A20.85,20.85,0,0,0,1.25,13.88,19.74,19.74,0,0,0,0,21.9a22.64,22.64,0,0,0,1.59,6.62A61.45,61.45,0,0,0,7,39.33c1.52,2.44,3.09,4.85,4.75,7.18C13,48.33,14.48,50,15.9,51.75a21.74,21.74,0,0,0,3.59,3.52,11.57,11.57,0,0,0,1.22.73h.54A12.83,12.83,0,0,0,25,52.94a63.35,63.35,0,0,0,6.87-8.77c1.59-2.42,3.14-4.88,4.58-7.39A51.92,51.92,0,0,0,41,26.45,18.77,18.77,0,0,0,41.72,17.8ZM21,37.26A16.27,16.27,0,1,1,37.25,21,16.26,16.26,0,0,1,21,37.26Z"/>
-                      <path class="cls-2" d="M33.62,15.57a1.51,1.51,0,0,1-.45,1.11L21.35,28.49l-2.21,2.22a1.51,1.51,0,0,1-1.11.46,1.48,1.48,0,0,1-1.11-.46L14.7,28.49l-5.91-5.9a1.55,1.55,0,0,1-.46-1.11,1.52,1.52,0,0,1,.46-1.11L11,18.15a1.52,1.52,0,0,1,1.11-.46,1.55,1.55,0,0,1,1.11.46L18,23l10.7-10.72a1.51,1.51,0,0,1,1.11-.45,1.54,1.54,0,0,1,1.11.45l2.22,2.22A1.54,1.54,0,0,1,33.62,15.57Z"/>
-                    </svg>
-                  </div>
-                  <div class="why-content">
-                    <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis luctus felis id ultrices. Vivamus sed varius leo, non bibendum magna.</p>
-                  </div>
+                
+                
+                
                 </div>
               </div>
             </div>

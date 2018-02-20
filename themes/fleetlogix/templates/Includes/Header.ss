@@ -1,19 +1,29 @@
-<header class="header" role="banner">
-	<div class="inner">
-		<div class="unit size4of4 lastUnit">
-			<a href="$BaseHref" class="brand" rel="home">
-				<h1>$SiteConfig.Title</h1>
-				<% if $SiteConfig.Tagline %>
-				<p>$SiteConfig.Tagline</p>
-				<% end_if %>
-			</a>
-			<% if $SearchForm %>
-				<span class="search-dropdown-icon">L</span>
-				<div class="search-bar">
-					$SearchForm
-				</div>
-			<% end_if %>
-			<% include Navigation %>
+<header>
+	<div class="row">
+		<div class="large-3 medium-3 small-12 columns">
+			<a href="index.html" id="logo"><img src="$ThemeDir/img/fleetlogix-logo-light.svg" alt="" class="light-logo"></a>
+		</div>
+		<div class="large-9 columns medium-9">
+			<a id="hamburger" href="#more-menu"><span></span></a>
+			<nav id="nav" role="navigation">
+				<ul class="nav-menu">
+              	
+					<% loop Menu(1) %>
+						<li class="nav-item <% if $Children %>has-drop<% end_if %>"><a href="$Link">$MenuTitle</a>
+							<% if $Children %>
+								<div class="sub-nav">
+									<ul class="sub-nav-group nav-item-list">
+										<% loop Children %>
+											<li><a href="$Link">$MenuTitle</a></li>
+										<% end_loop %>
+									</ul>
+								</div>
+							<% end_if %>
+						</li>
+					<% end_loop %>
+              	
+				</ul>
+			</nav>
 		</div>
 	</div>
 </header>
