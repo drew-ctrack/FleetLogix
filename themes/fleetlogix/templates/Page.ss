@@ -9,23 +9,22 @@
 	<link rel="stylesheet" href="$ThemeDir/css/app.css">
 </head>
 <body>
-
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
 	
 	<!-- mobile menu -->
 	<div class="menu-wrap">
-      <nav class="menu">
-        <ul class="nav-menu">
-        	<% loop Menu(1) %>
-            	<li class="nav-item"><a href="$Link">$Title</a></li>
-            <% end_loop %>
-        </ul>
-        <button class="close-button" id="close-button">X</button>
-      </nav>
-    </div>
-    <button class="menu-button fa fa-bars" id="open-button"><span></button>
+		<nav class="menu">
+			<ul class="nav-menu">
+				<% loop Menu(1) %>
+					<li class="nav-item"><a href="$Link">$Title</a></li>
+				<% end_loop %>
+			</ul>
+			<button class="close-button" id="close-button">X</button>
+		</nav>
+	</div>
+	<button class="menu-button fa fa-bars" id="open-button"><span></button>
         
 	<% include Header %>
           
@@ -34,6 +33,5 @@
 	<% include Footer %>
     
 	<script src="$ThemeDir/js/app.js"></script>
-
 </body>
 </html>

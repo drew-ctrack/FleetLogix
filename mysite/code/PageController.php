@@ -29,6 +29,8 @@ class PageController extends ContentController
     }
     
     public function getPages($pageType){
+        // Template calls this function with a specific page type. The function gets
+        // and returns a list of all pages with said type.
         
         $list = $pageType::get();
         
