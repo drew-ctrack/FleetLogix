@@ -6,7 +6,8 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FleetLogix</title>
-	<link rel="stylesheet" href="$ThemeDir/css/app.css">
+	<link rel="stylesheet" href="$ThemeDir/assets/css/app.css">
+	
 </head>
 <body>
 	<div id="preloader">
@@ -32,6 +33,13 @@
       
 	<% include Footer %>
     
-	<script src="$ThemeDir/js/app.js"></script>
+	<script src="$ThemeDir/assets/js/app.js"></script>
+
+	<script src="$ThemeDir/assets/js/gallery/featherlight.js"></script>
+	<script src="$ThemeDir/assets/js/gallery/featherlight.gallery.js"></script>
+	<script src="$ThemeDir/assets/js/gallery/owl.carousel.js"></script>
+	<script src="$ThemeDir/assets/js/gallery/owl.navigation.js"></script>
+	<script src="$ThemeDir/assets/js/gallery/owl.autoplay.js"></script>
+	<script src="$ThemeDir/assets/js/gallery/gallery.js"></script>
 </body>
 </html>

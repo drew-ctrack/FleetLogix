@@ -1,5 +1,5 @@
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url($ThemeDir/img/hero-bg.jpg);">
+<section class="page-banner" style="background-image: url($ThemeDir/assets/img/hero-bg.jpg);">
 	<div class="overlay"></div>
 	<div class="row">
 		<div class="large-12 columns animate-box fadeIn">

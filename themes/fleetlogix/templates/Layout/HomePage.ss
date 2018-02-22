@@ -1,4 +1,4 @@
-<section class="hero-banner" style="background-image: url($ThemeDir/img/hero-bg.jpg);">
+<section class="hero-banner" style="background-image: url($ThemeDir/assets/img/hero-bg.jpg);">
 	<div class="overlay"></div>
 	<div class="row">
 		<div class="large-12 columns animate-box fadeIn">
@@ -18,7 +18,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="half-content">
-				<div class="background-image half left" style="background-image: url($ThemeDir/img/bus-bg.jpg);"><span class="gradient-overlay"></span></div>
+				<div class="background-image half left" style="background-image: url($ThemeDir/assets/img/bus-bg.jpg);"><span class="gradient-overlay"></span></div>
 				<div class="half content right">
 					$Content
 					<a href="/" class="button">Learn More</a>
@@ -38,7 +38,7 @@
     	<% loop getPages(ProductHolderPage).Limit(3) %>
 			<div class="large-4 medium-4 small-12 columns animate-box">
 				<a href="$Link" class="grid-image">
-					<span class="background-image" style="background-image: url($ThemeDir/img/tracking-bg.jpg);"></span>
+					<span class="background-image" style="background-image: url($ThemeDir/assets/img/tracking-bg.jpg);"></span>
 					<span class="overlay"></span>
 					<span class="down-relative">
 						<span class="down"></span>
@@ -62,7 +62,7 @@
 		<% loop getPages(ProductPage).Limit(4) %>
 			<div class="large-3 medium-3 small-6 columns animate-box">
 				<a href="$Link">
-					<div class="product-image" style="background-image: url($ThemeDir/img/dashcam1.jpg);"></div>
+					<div class="product-image" style="background-image: url($ThemeDir/assets/img/dashcam1.jpg);"></div>
 					<div class="product-lower">
 						<h5>$MenuTitle</h5>
 					</div>
@@ -81,7 +81,7 @@
 		<div class="row">
 			<div class="large-12 columns">
 				<div class="half-content">
-					<div class="background-image half right" style="background-image: url($ThemeDir/img/why-bg.jpg);"><span class="gradient-overlay"></span></div>
+					<div class="background-image half right" style="background-image: url($ThemeDir/assets/img/why-bg.jpg);"><span class="gradient-overlay"></span></div>
 					<div class="half content left">
 						<h2>Why FleetLogix?</h2>
                 
@@ -125,16 +125,16 @@
 			<h5>FleetLogix are Trusted By...</h5>
 		</div>
 		<div class="large-3 medium-3 small-6 columns">
-			<img src="$ThemeDir/img/trust-logo1.jpg" alt="Company name logo">
+			<img src="$ThemeDir/assets/img/trust-logo1.jpg" alt="Company name logo">
 		</div>
 		<div class="large-3 medium-3 small-6 columns">
-			<img src="$ThemeDir/img/trust-logo2.jpg" alt="Company name logo">
+			<img src="$ThemeDir/assets/img/trust-logo2.jpg" alt="Company name logo">
 		</div>
 		<div class="large-3 medium-3 small-6 columns">
-			<img src="$ThemeDir/img/trust-logo3.jpg" alt="Company name logo">
+			<img src="$ThemeDir/assets/img/trust-logo3.jpg" alt="Company name logo">
 		</div>
 		<div class="large-3 medium-3 small-6 columns">
-			<img src="$ThemeDir/img/trust-logo4.jpg" alt="Company name logo">
+			<img src="$ThemeDir/assets/img/trust-logo4.jpg" alt="Company name logo">
 		</div>
 	</div>
 </section> 

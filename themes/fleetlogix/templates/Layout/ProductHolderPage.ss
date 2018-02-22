@@ -17,7 +17,7 @@
 		<% loop Children %>
 			<div class="large-4 medium-4 small-12 columns animate-box fadeIn">
 				<a href="$Link" class="grid-image">
-					<span class="background-image" style="background-image: url($ThemeDir/img/tracking-bg.jpg);"></span>
+					<span class="background-image" style="background-image: url($ThemeDir/assets/img/tracking-bg.jpg);"></span>
       				<span class="overlay"></span>
               		<span class="down-relative">
                 		<span class="down"></span>

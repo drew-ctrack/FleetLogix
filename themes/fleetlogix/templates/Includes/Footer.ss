@@ -1,6 +1,5 @@
-
 <section class="cta animate-box">
-	<div class="background-image" style="background-image: url($ThemeDir/img/cta-bg.jpg);"></div>
+	<div class="background-image" style="background-image: url($ThemeDir/assets/img/cta-bg.jpg);"></div>
 	<div class="overlay"></div>
 	<div class="row">
 		<div class="large-12 columns">
@@ -16,11 +15,11 @@
 <footer>
 	<div class="row">
 		<div class="large-12 columns text-center">
-			<a href="index.html" id="logo"><img src="$ThemeDir/img/fleetlogix-logo-light.svg" alt="" class="light-logo"></a>
+			<a href="index.html" id="logo"><img src="$ThemeDir/assets/img/fleetlogix-logo-light.svg" alt="" class="light-logo"></a>
 		</div>
 		
 		
-		<% loop getPages(ProductHolderPage) %>
+		<% loop getPages(ProductHolderPage).Limit(3) %>
 			<% if Children %>
 				<div class="large-3 medium-3 small-12 columns">
         			<h5><a href="$Link">$Title</a></h5>
@@ -32,9 +31,6 @@
         		</div>
         	<% end_if %>
 		<% end_loop %>
-		
-        
-          
 		
 		<div class="large-3 medium-3 small-12 columns">
 			<h5><a href="/">Contact FleetLogix</a></h5>

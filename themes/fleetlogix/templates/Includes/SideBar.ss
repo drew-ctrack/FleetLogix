@@ -1,4 +1,11 @@
 <div class="sidebar hide-for-print">
+
+<% if $ProductBrochure %>
+	<% with $ProductBrochure %>
+		<a href="$URL" class="button download">$Title - ($Size)</a>
+	<% end_with %>
+<% end_if %>
+
 <div class="sidebar-menu">
 	<% if Menu(3) %>
 		<ul>
