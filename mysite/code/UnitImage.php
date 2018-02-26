@@ -33,10 +33,10 @@ class UnitImage extends DataObject {
         
         $fields->addFieldtoTab('Root.Main', TextField::create('ImageName','Name of Image'));
         
-        $fields->addFieldtoTab('Root.Main', $images = UploadField::create('UploadImage','Images: Upload PDF or Image'));
+        $fields->addFieldtoTab('Root.Main', $images = UploadField::create('UploadImage','Upload Image'));
         $images
         ->setFolderName('product-photos')
-        ->getValidator()->setAllowedExtensions(['pdf', 'png', 'jpeg', 'jpg', 'JPG']);
+        ->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg', 'JPG']);
           
         return $fields;
     }

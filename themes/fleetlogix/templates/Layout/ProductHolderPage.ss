@@ -17,7 +17,14 @@
 		<% loop Children %>
 			<div class="large-4 medium-4 small-12 columns animate-box fadeIn">
 				<a href="$Link" class="grid-image">
-					<span class="background-image" style="background-image: url($ThemeDir/assets/img/tracking-bg.jpg);"></span>
+					
+					<% if $Photos %>
+						<% loop $Photos.Limit(1) %>
+							<span class="background-image" style="background-image: url($UploadImage.URL);"></span>
+						<% end_loop %>
+					<% else %>
+						<span class="background-image" style="background-image: url($ThemeDir/assets/img/tracking-bg.jpg);"></span>
+					<% end_if %>
       				<span class="overlay"></span>
               		<span class="down-relative">
                 		<span class="down"></span>

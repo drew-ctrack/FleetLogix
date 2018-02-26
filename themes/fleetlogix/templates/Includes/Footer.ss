@@ -41,7 +41,9 @@
 						<li>$Address</li>
 					<% end_with %>			
 				</ul>
-			<a href="/contact.html" class="button">Email Us</a>
+				<% with $Page('contact') %>
+  					<a href="$Link" class="button">Email Us</a>
+				<% end_with %>		
 		</div>	
 	</div>
 	
