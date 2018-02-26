@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "97efc7759b4a26cf0c836ca80b5b170f",
+    "content-hash": "7b530de7c12103b589806496d7bb3fcc",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1739,6 +1739,62 @@
             "time": "2017-12-06T22:08:26+00:00"
         },
         {
+            "name": "silverstripe/segment-field",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-segment-field.git",
+                "reference": "fe7550a901ab7e12e11f90173ed02624ffe2014b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-segment-field/zipball/fe7550a901ab7e12e11f90173ed02624ffe2014b",
+                "reference": "fe7550a901ab7e12e11f90173ed02624ffe2014b",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/reports": "^4.0",
+                "silverstripe/siteconfig": "^4.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                },
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Forms\\": "code/",
+                    "SilverStripe\\Forms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "cgpitt@gmail.com"
+                }
+            ],
+            "description": "A reusable approach to segment-generating fields",
+            "keywords": [
+                "segment",
+                "silverstripe"
+            ],
+            "time": "2017-10-25T23:49:44+00:00"
+        },
+        {
             "name": "silverstripe/siteconfig",
             "version": "4.0.1",
             "source": {
@@ -1789,6 +1845,85 @@
                 "siteconfig"
             ],
             "time": "2017-12-06T22:08:26+00:00"
+        },
+        {
+            "name": "silverstripe/userforms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-userforms.git",
+                "reference": "190e4ba14efc4216c8683675fd03089eb3c6f424"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/190e4ba14efc4216c8683675fd03089eb3c6f424",
+                "reference": "190e4ba14efc4216c8683675fd03089eb3c6f424",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.0",
+                "silverstripe/segment-field": "^2.0",
+                "silverstripe/versioned": "^1.0",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions",
+                "silverstripe/gridfieldqueuedexport": "Export large submission as CSV through queued jobs in the background"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                },
+                "expose": [
+                    "client/dist",
+                    "client/lang",
+                    "client/thirdparty",
+                    "images"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\UserForms\\": "code/",
+                    "SilverStripe\\UserForms\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Craig",
+                    "email": "david@silverstripe.com"
+                },
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                },
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                },
+                {
+                    "name": "Christopher Pitt",
+                    "email": "chris@silverstripe.com"
+                },
+                {
+                    "name": "Scott Hutchinson",
+                    "email": "scott@silverstripe.com"
+                }
+            ],
+            "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
+            "keywords": [
+                "silverstripe",
+                "userforms"
+            ],
+            "time": "2018-02-21T01:06:38+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -1941,6 +2076,73 @@
                 "mailer"
             ],
             "time": "2017-05-01T15:54:03+00:00"
+        },
+        {
+            "name": "symbiote/silverstripe-gridfieldextensions",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-gridfieldextensions.git",
+                "reference": "6d8b41ee5a0b0f1b07215f5bf146c07a78ef61fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-gridfieldextensions/zipball/6d8b41ee5a0b0f1b07215f5bf146c07a78ef61fe",
+                "reference": "6d8b41ee5a0b0f1b07215f5bf146c07a78ef61fe",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version",
+                "silverstripe-australia/gridfieldextensions": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/versioned": "^1@dev",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "gridfieldextensions",
+                "screenshots": [
+                    "docs/en/_images/editable-rows.png",
+                    "docs/en/_images/add-existing-search.png"
+                ],
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symbiote\\GridFieldExtensions\\": "src/",
+                    "Symbiote\\GridFieldExtensions\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A collection of useful grid field components",
+            "homepage": "http://github.com/symbiote/silverstripe-gridfieldextensions",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2018-02-11T22:08:47+00:00"
         },
         {
             "name": "symfony/cache",
@@ -3718,7 +3920,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 0
+        "silverstripe/recipe-cms": 0,
+        "silverstripe/userforms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

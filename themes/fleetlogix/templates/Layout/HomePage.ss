@@ -62,7 +62,13 @@
 		<% loop getPages(ProductPage).Limit(4) %>
 			<div class="large-3 medium-3 small-6 columns animate-box">
 				<a href="$Link">
-					<div class="product-image" style="background-image: url($ThemeDir/assets/img/dashcam1.jpg);"></div>
+					<% if $Photos %>
+						<% loop $Photos.Limit(1) %>
+							<div class="product-image" style="background-image: url($UploadImage.URL);"></div>
+						<% end_loop %>
+					<% else %>
+						<div class="product-image" style="background-image: url($ThemeDir/assets/img/dashcam2.jpg);"></div>
+					<% end_if %>
 					<div class="product-lower">
 						<h5>$MenuTitle</h5>
 					</div>

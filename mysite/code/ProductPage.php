@@ -16,7 +16,7 @@ class ProductPage extends Page {
     
     private static $has_many = [
         'Descriptions' => ProductDescription::class,
-        'ProductImages' => ProductImage::class,
+        'Photos' => UnitImage::class,
     ];
     
     private static $extensions = [
@@ -30,24 +30,19 @@ class ProductPage extends Page {
     private static $owns = [
         'ProductBrochure',
         'Descriptions',
-        'ProductImages'
+        'Photos'
     ];
     
     public function getCMSFields() {
         $fields = parent::getCMSFields();
         
         $fields->addFieldToTab('Root.ProductInfo', GridField::create('Descriptions', 'Product Information', $this->Descriptions(), GridFieldConfig_RecordEditor::create()));
+        $fields->addFieldToTab('Root.Images', GridField::create('Photos', 'Product Images', $this->Photos(), GridFieldConfig_RecordEditor::create()));
         
         $fields->addFieldtoTab('Root.Brochure', $brochure = UploadField::create('ProductBrochure','Brochure: Upload PDF or Image')); 
         $brochure
         ->setFolderName('brochures')
         ->getValidator()->setAllowedExtensions(['pdf', 'png', 'jpeg', 'jpg']);
-        
-        $fields->addFieldtoTab('Root.Images', $images = UploadField::create('ProductImages','Images: Upload PDF or Image'));
-        $images
-        ->setFolderName('product-images')
-        ->getValidator()->setAllowedExtensions(['pdf', 'png', 'jpeg', 'jpg']);
-
               
         return $fields;
     }

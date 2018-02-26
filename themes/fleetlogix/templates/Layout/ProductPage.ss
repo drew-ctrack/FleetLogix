@@ -12,18 +12,18 @@
 
 <% include BreadCrumbs %>
 
-<% if $ProductImages %>
+
+<% if $Photos %>
 	<section class="project-gallery-container">
 		<div class="row">
 			<div class="large-12 columns">
 				<div class="project-gallery owl-carousel">
-	
-					<% loop $ProductImages %>
-						<div class="item">
-							<a class="gallery" href="$URL"><img src="$URL" alt=""></a>
-							-+-
-						</div>
-					<% end_loop %>			
+
+						<% loop $Photos %>
+							<div class="item">
+								<a class="gallery" href="$UploadImage.URL"><img src="$UploadImage.URL" alt=""></a>
+							</div>
+						<% end_loop %>		
 		
 				</div>
 			</div>
